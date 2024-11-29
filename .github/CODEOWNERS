@@ -1,0 +1,8 @@
+# Current WG Code Sub Teams:
+# @tauri-apps/wg-tauri
+# @tauri-apps/wg-devops
+
+# Order is important; the last matching pattern takes the most precedence.
+* @hizuki-mimuro/developer
+
+.github @hizuki-mimuro/lead

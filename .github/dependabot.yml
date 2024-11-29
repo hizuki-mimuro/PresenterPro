@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: 'cargo'
+    directory: '.'
+    schedule:
+      internal: 'daily'
+    labels:
+      - 'type: chore'
+    open-pull-requests-limit: 0
+
+  - package-ecosystem: 'cargo'
+    directory: '/src-tauri'
+    schedule:
+      internal: 'daily'
+    labels:
+      - 'type: chore'
+    open-pull-requests-limit: 0
