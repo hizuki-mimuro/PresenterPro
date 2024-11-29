@@ -1,9 +1,16 @@
 [package]
 name = "PresenterPro"
-version = "0.1.0"
 edition = "2021"
+authors = ["hizuki-mimuro"]
+license = "MIT"
+repository = "https://github.com/hizuki-mimuro/PresenterPro"
+homepage = "https://presenterpro.com"
+documentation = "https://presenterpro.com"
+keywords = ["dom", "ui", "gui", "react", "wasm"]
+rust-version = "1.82.0"
+publish = false
+version = "0.6.0-alpha.5"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 dioxus = { version = "0.5", features = ["web"] }
 dioxus-logger = "0.5"
