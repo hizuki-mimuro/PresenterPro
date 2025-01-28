@@ -1,11 +1,11 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "PresenterPro",
+  "productName": "presenterpro",
   "version": "0.1.0",
   "identifier": "com.presenterpro.app",
   "build": {
-    "beforeDevCommand": "dx serve --port 1420",
-    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "dx serve --port 8080",
+    "devUrl": "http://localhost:8080",
     "beforeBuildCommand": "dx build --release",
     "frontendDist": "../dist"
   },
@@ -13,7 +13,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "PresenterPro",
+        "title": "presenterpro",
         "width": 800,
         "height": 600
       }

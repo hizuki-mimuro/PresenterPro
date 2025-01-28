@@ -1,19 +1,12 @@
 [package]
-name = "PresenterPro"
+name = "workspace"
+version = "0.1.0"
+description = "A Tauri App"
 edition = "2021"
-authors = ["hizuki-mimuro"]
-license = "MIT"
-repository = "https://github.com/hizuki-mimuro/PresenterPro"
-homepage = "https://presenterpro.com"
-documentation = "https://presenterpro.com"
-keywords = ["dom", "ui", "gui", "react", "wasm"]
-rust-version = "1.82.0"
-publish = false
-version = "0.6.0-alpha.5"
 
 [dependencies]
-dioxus = { version = "0.5", features = ["web"] }
-dioxus-logger = "0.5"
+dioxus = { version = "0.6", features = ["web"] }
+dioxus-logger = "0.6"
 wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.4"
 web-sys = "0.3"
@@ -23,3 +16,15 @@ serde-wasm-bindgen = "0.6"
 
 [workspace]
 members = ["src-tauri"]
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
